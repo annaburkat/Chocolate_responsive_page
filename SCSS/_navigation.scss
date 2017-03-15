@@ -1,0 +1,80 @@
+button {
+	display:none;
+}
+
+.hamburger {
+	width: 45px;
+	background-color: $backgroundColor;
+	position: absolute;
+	top: 20px;
+	right: 15px;
+	line-height: 45px;
+	color: white;
+	font-size: 1.4em;
+	font-weight: bold;
+	z-index: 1;
+	cursor: pointer;
+	border: none;
+}
+
+.cross {
+	width: 45px;
+	background: $backgroundColor;
+	position: absolute;
+	top: 25px;
+	right: 15px;
+	line-height: 45px;
+	color: white;
+	font-size: 2.5em;
+	font-weight: bold;
+	cursor: pointer;
+	border: none;
+}
+
+ul {
+	float: right;
+	display: inline;
+	margin: 35px 0 0 4px;
+	li {
+		background: black;
+		list-style: none;
+		padding: 10px;
+		width: 100%;
+		text-align: center;
+		display: inline;
+		a {
+			color: white;
+			font: 12px 600 serif;
+			color: white;
+			text-decoration: none;
+		}
+		a:hover {
+			color: rgb(74, 167, 210);
+		}
+	}
+}
+
+.hidden {
+	display: none;
+}
+
+.visible {
+	display: inherit;
+}
+
+@media (max-width: 640px) {
+	button{
+		display: block;
+	}
+	ul {
+		display: flex;
+		flex-direction: column;
+		padding-top: 45px;
+		z-index: 1;
+		min-width: 100%;
+		li {
+			z-index: 1;
+			width: 100%;
+		}
+	}
+}

@@ -1,0 +1,27 @@
+.container {
+	width: 100%;
+	max-width: 900px;
+	margin: 0 auto;
+	position: relative;
+}
+
+[class*='col-'] {
+	min-height: 1px;
+	float: left;
+}
+
+.col-1 {
+	width: 25%;
+}
+
+.col-2 {
+	width: 50%;
+}
+
+.col-3 {
+	width: 75%;
+}
+
+.col-4 {
+	width: 100%;
+}
